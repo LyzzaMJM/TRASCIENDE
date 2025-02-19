@@ -1,17 +1,98 @@
-<!-- Por ejemplo, en rol-estudiante.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard Estudiante</title>
-    <!-- Tus hojas de estilo -->
-  </head>
-  <body>
-    <!-- Contenido del dashboard -->
-    <button id="logoutBtn">Cerrar sesión</button>
-    <h1>Estudiante</h1>
-    <!-- Incluye dashboard.js -->
-    <script type="module" src="../js/dashboard.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trasciende</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/rol-estudiante.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/img/logocorto.png">
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://trasciende.com.pe/wp-content/uploads/2021/08/Logo_Trasciende.png" alt="Logo" width="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+                        MENU
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#nuestros-programas">PROGRAMAS</a></li>
+                        <li><a class="dropdown-item" href="#ferias-vocacionales">FERIAS</a></li>
+                        <li><a class="dropdown-item" href="#unete-equipo">COMUNIDAD</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto-formulario">CONTÁCTANOS</a></li>
+                <li class="nav-item ms-3">
+                    <button id="logoutBtn" class="btn btn-danger">Cerrar sesión</button>
+                </li>
+                <li class="nav-item ms-3">
+                    <div class="search-container">
+                        <button class="search-btn" id="search-btn">🔍</button>
+                        <input type="search" id="search-box" placeholder="Buscar..." aria-label="Buscar">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container mt-4">
+    <h1 class="text-center">Estudiante</h1>
+    <section class="text-center my-5">
+        <h2>Proyectos Anteriores</h2>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="https://youtu.be/NYLF2Hc6WmY" target="_blank">
+                <img src="https://img.youtube.com/vi/NYLF2Hc6WmY/0.jpg" alt="Día 1" class="preview-img">
+                📺 Antiferia Vocacional Virtual:<br> Día 1 para estudiantes
+            </a>
+            <a href="https://youtu.be/CU8dARRERaU" target="_blank">
+                <img src="https://img.youtube.com/vi/CU8dARRERaU/0.jpg" alt="Día 2" class="preview-img">
+                📺 Antiferia Vocacional Virtual:<br> Día 2 para estudiantes
+            </a>
+            <a href="https://youtu.be/0QSuu7-t4A8" target="_blank">
+                <img src="https://img.youtube.com/vi/0QSuu7-t4A8/0.jpg" alt="Día 3" class="preview-img">
+                📺 Antiferia Vocacional Virtual:<br> Día 3 para estudiantes
+            </a>
+        </div>
+    </section>
+    <section class="row my-5 justify-content-center">
+        <div class="col-lg-6 text-center">
+            <h2>Guía para Estudiantes</h2>
+            <iframe class="w-100" height="500" src="https://drive.google.com/file/d/1nJYAB97mmpIMI9D6CAbcjhkh9LMMco6B/preview?embedded=true" allow="autoplay"></iframe>
+        </div>
+        <div class="col-lg-6 text-center">
+            <h2>Serie Web GPS Vocacional</h2>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.youtube.com/playlist?list=PL9Z1Zo1CQy_mTdTJCbkmQ17oiG_a4vkfv" class="btn btn-purple btn-lg" target="_blank">📺 Ver Lista de Reproducción</a>
+            </div>
+        </div>
+    </section>
+    <section class="text-center my-5">
+        <h2>Escucha nuestro Podcast</h2>
+        <p>Son 8 episodios con ejes temáticos de: Enamórate del problema, Objetivos de Desarrollo Sostenible, Corrupción, Salud, Medio Ambiente, Crecimiento Económico, Tecnología y cierre con los jóvenes.</p>
+        <a href="https://bit.ly/EpisodiosPodcastsTCD21" class="btn btn-primary btn-lg" target="_blank">🎧 Escuchar Episodios del Podcast</a>
+    </section>
+</main>
+
+<footer class="bg-light text-center py-3">
+    <p>&copy; 2025 Trasciende</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

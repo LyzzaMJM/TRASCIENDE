@@ -1,0 +1,173 @@
+/* ----- NAVBAR PRINCIPAL ----- */
+.navbar {
+    background-color: #DAFF3D !important;  /* Forzar color amarillo */
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    width: 95%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- ESTILO DE LOS ENLACES ----- */
+.navbar .nav-link {
+    color: #000 !important; /* Asegura que los enlaces sean negros */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #4900A2;
+}
+
+/* ----- BOTÓN DEL MENÚ HAMBURGUESA ----- */
+.navbar-toggler {
+    background-color: #000; 
+    border: 1px solid #fff; 
+    padding: 6px 10px;
+    border-radius: 10px; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-toggler:hover {
+    background-color: #4A00A5;
+    transform: scale(1.1);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* ----- MENÚ DESPLEGABLE ----- */
+.dropdown-menu {
+    background-color: #AFD031; 
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- ELEMENTOS DEL MENÚ ----- */
+.dropdown-item {
+    color: #000;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #ebebeb;
+    color: #4A00A5;
+}
+
+/* ----- BOTÓN DE LOGOUT ----- */
+.btn-danger {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px; /* Hace el botón más ovalado */
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #333 !important;
+}
+
+/* ----- BARRA DE BÚSQUEDA ----- */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.search-btn:focus + #search-box,
+#search-box:focus {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #000;
+    background: white;
+    outline: none;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+#search-box {
+    width: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    transition: width 0.3s ease;
+    outline: none;
+}
+
+/* ----- ESTILOS RESPONSIVOS ----- */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .dropdown-menu {
+        border-radius: 10px;
+    }
+}
+
+/*  PROYECTOS ANTERIORES ----- */
+.text-center h2 {
+    margin-bottom: 30px;
+}
+
+.d-flex.flex-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.d-flex.flex-wrap a {
+    display: inline-block;
+    background-color: #4900A2 !important;
+    color: white !important;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: pre-line;
+}
+
+.d-flex.flex-wrap a:hover {
+    background-color: #360080 !important;
+    transform: scale(1.05);
+}
+
+.preview-img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 5px;
+    border-radius: 8px;
+}
+
+.btn-purple {
+    background-color: #4900A2 !important;
+    color: white !important;
+}
+
+.btn-purple:hover {
+    background-color: #360080 !important;
+}

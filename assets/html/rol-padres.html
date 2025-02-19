@@ -1,17 +1,280 @@
-<!-- Por ejemplo, en rol-estudiante.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard Padres</title>
-    <!-- Tus hojas de estilo -->
-  </head>
-  <body>
-    <!-- Contenido del dashboard -->
-    <button id="logoutBtn">Cerrar sesión</button>
-    <h1>Padres</h1>
-    <!-- Incluye dashboard.js -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trasciende</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/rol-padre.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/img/logocorto.png">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/index.html">
+                <img src="../img/logocorto.png" alt="Logo" width="60">
+            </a>
+
+            <!-- Botón de colapso para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+                            MENÚ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#importancia">IMPORTANCIA</a></li>
+                            <li><a class="dropdown-item" href="#proyectos">PROYECTOS</a></li>
+                            <li><a class="dropdown-item" href="#podcast">PODCAST</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#webinars">WEBINARS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">TESTIMONIOS</a></li>
+                    
+                    <!-- Botón de Logout con ID -->
+                    <li class="nav-item ms-3">
+                        <a href="#" class="btn btn-dark ms-2" id="logoutBtn">SIGN OUT</a>
+                    </li>
+
+                    <!-- Barra de búsqueda con lupa -->
+                    <li class="nav-item ms-3">
+                        <div class="search-container">
+                            <button class="search-btn" id="search-btn">🔍</button>
+                            <input type="search" id="search-box" placeholder="Buscar..." aria-label="Buscar">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="container mt-4">
+      <h1 class="text-center">Padres</h1>
+
+
+
+        <!-- Carrusel -->
+        <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="../img/antiferiatres.png" class="d-block w-100" alt="Webinar 1">
+              </div>
+              <div class="carousel-item">
+                  <img src="../img/antiferiados.jpg" class="d-block w-100" alt="Webinar 2">
+              </div>
+              <div class="carousel-item">
+                  <img src="../img/antiferia.jpg" class="d-block w-100" alt="Webinar 3">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+  
+      <!-- Cuadro de Información -->
+      <div class="info-box mt-4">
+          <h3 id="importancia" >¿Por qué deben participar los padres en la orientación vocacional?</h3>
+          <p>La orientación de los padres es clave en la toma de decisiones vocacionales de los estudiantes. Su apoyo puede marcar una gran diferencia en la elección de carrera y el éxito académico.</p>
+      </div>
+  
+
+
+  
+
+  <!-- Proyectos Anteriores -->
+  <section id="nuestros-programas" class="text-center my-5">
+    <h2 id="proyectos" >Proyectos Anteriores</h2>
+    <p class="lead">Descubre nuestros webinars diseñados para apoyar a los padres en la orientación vocacional de sus hijos.</p>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/btMcLwKvDgA" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-title mt-3">¡Y se acabó el colegio!</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+              <div class="card-body">
+                  <div class="ratio ratio-16x9">
+                      <iframe src="https://www.youtube.com/embed/KWLZR6SjstY" allowfullscreen></iframe>
+                  </div>
+                  <h5 class="card-title mt-3">¿Cómo acompañar a mi hij@ en su búsqueda vocacional?</h5>
+              </div>
+          </div>
+      </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/c3HJuj2mtPM" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-title mt-3">¿Puede ser mi hij@ feliz y exitoso?</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </section>
+  <!-- Botón de Suscribirme con imagen del canal al lado izquierdo -->
+  <div class="d-flex align-items-center justify-content-center mt-3">
+    <img id="podcast" src="../img/LogoTrasciende2.png" 
+        alt="Perú Trasciende" class="youtube-channel-img me-2">
+    <a href="https://www.youtube.com/@PeruTrasciende/featured" class="btn btn-danger" target="_blank">Suscribirme a YouTube</a>
+  </div>
+
+
+
+    <!-- Antiferia Vocacional -->
+  <section id="ferias-vocacionales" class="text-center my-5">
+    <h2 id="webinars" >Antiferia Vocacional Virtual</h2>
+    <p>Explora nuestras sesiones diseñadas para PPF y docentes.</p>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/Momt4ZzSE4E" allowfullscreen></iframe>
+                    </div>
+                    <p class="card-text mt-3">Webinars con expertos para ayudar a padres y docentes en la orientación de los jóvenes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  </div>
+  
+
+
+
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="text-center my-5">
+    <h2 id="testi" >Testimonios de Padres</h2>
+    <p class="lead">Descubre lo que los padres dicen sobre nuestro programa.</p>
+
+    <div id="testimoniosCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="0" class="active" aria-label="Testimonio 1"></button>
+            <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="1" aria-label="Testimonio 2"></button>
+            <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="2" aria-label="Testimonio 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="testimonial-box p-4">
+                    <p class="testimonial-text">"Gracias a este programa, mi hijo encontró su verdadera vocación. Nos dieron herramientas clave para apoyarlo en su decisión."</p>
+                    <h5>- María López</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-box p-4">
+                    <p class="testimonial-text">"Las charlas fueron muy útiles y nos dieron claridad sobre el futuro académico de nuestros hijos. ¡Recomiendo mucho este espacio!"</p>
+                    <h5>- Juan Pérez</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-box p-4">
+                    <p class="testimonial-text">"Me encantó la Antiferia Vocacional, fue interactiva y llena de información relevante para tomar mejores decisiones."</p>
+                    <h5>- Ana Rodríguez</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+      <div class="footer-container">
+          <div class="social-icons">
+              <a href="https://www.facebook.com/perutrasciende"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/perutrasciende/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/perutrasciende"><i class="fab fa-youtube"></i></a>
+              <a href="https://pe.linkedin.com/company/perutrasciende"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="rights">
+              <p> <strong> © 2022 Trasciende - Derechos Reservados</strong> </p>
+              <a><strong>Política de Privacidad</strong></a>
+          </div>
+      </div>
+  </footer>
+
+
+
     <script type="module" src="../js/dashboard.js"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
