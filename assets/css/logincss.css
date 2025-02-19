@@ -285,7 +285,7 @@ button[type="button"]:hover, button[type="submit"]:hover {
   font-size: 28px;
   font-weight: 900; 
   font-family: 'Roboto Condensed', sans-serif;
-  text-shadow: 3px 3px 0px #000000; 
+  text-shadow: 3px 3px 0px #a4be2c; 
   text-align: center; 
 }
 
@@ -479,4 +479,9 @@ footer {
 @keyframes glowText {
   0% { text-shadow: 0 0 3px #4A00A5, 0 0 6px #7B00FF; }
   100% { text-shadow: 0 0 6px #7B00FF, 0 0 9px #AA00FF; }
+}
+
+
+.bi-google {
+  color: #4A00A5; 
 }

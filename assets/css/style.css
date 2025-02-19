@@ -2,7 +2,7 @@
 
   
 body {
-    font-family: 'Roboto Condensed', sans-serif; 
+    
     margin: 0;
     padding: 0;
     background-image: url('../img/fondodos.png');
@@ -236,6 +236,9 @@ body {
     animation: scaleAnimation 5s ease-in-out infinite, flicker 1s linear infinite, bubbles 3s ease-in-out infinite;
 }
 
+#sabiasqueimg{
+    animation:none;
+}
 
 @keyframes scaleAnimation {
     0% {
@@ -320,7 +323,7 @@ html {
 
 
 #saber-mas {
-    
+    color: #000000;
     border-radius: 10px;
 }
 
@@ -342,7 +345,7 @@ html {
 
 #saber-mas p {
     font-size: 1.2rem;
-    color: #333;
+    color: #000000;
 }
 
 #saber-mas .list-group-item {
@@ -763,6 +766,10 @@ html {
     grid-row: span 1;
 }
 
+p{
+    margin-top: 0px;
+}
+
 
 .sobre-nosotros .presentacion {
     font-size: 1.2rem;
@@ -774,12 +781,12 @@ html {
     background-color: #fff; 
     border-radius: 8px;
 
-    line-height: 1.6;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
 }
 
 #presentaciontexto{
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .mision-vision {
@@ -806,8 +813,8 @@ html {
 }
 
 .titulo-vision {
-    color: #DAFF3D;
-    border-bottom-color: #6B00D7;
+    color: #6B00D7;
+    border-bottom-color: #DAFF3D;
 }
 
 .texto-mision, .texto-vision {
@@ -1081,6 +1088,7 @@ footer {
     background: linear-gradient(135deg, #ffffff, #f5f5f5);
     border-radius: 8px;
     box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
 }
 
 .sentido-col h4 {
