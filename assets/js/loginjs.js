@@ -1,7 +1,7 @@
 import { registerUser, loginUser, loginWithGoogle } from "./config.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Referencias a los elementos
+  
   const loginForm = document.getElementById("loginForm");
   const registerForm = document.getElementById("registerForm");
   const loginImage = document.getElementById("loginImage");
