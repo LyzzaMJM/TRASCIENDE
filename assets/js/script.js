@@ -69,3 +69,15 @@ document.querySelector('.modal-exito button').addEventListener('click', function
     document.querySelector('.overlay').style.display = 'none';
     document.querySelector('.modal-exito').style.display = 'none';
 });
+
+
+//  cursor dinámico
+const cursor = document.createElement("div");
+cursor.id = "custom-cursor";
+document.body.appendChild(cursor);
+
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = `${e.clientX}px`;
+  cursor.style.top = `${e.clientY}px`;
+});
