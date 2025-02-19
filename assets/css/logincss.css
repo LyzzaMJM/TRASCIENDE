@@ -2,7 +2,7 @@ body {
   background-image: url('../img/fondodosin.png');
   background-size: cover;
   background-position: center;
-  font-family: 'Roboto Condensed', sans-serif;
+ 
   color: #000000;
   line-height: var(--bs-body-line-height);
   
@@ -273,7 +273,7 @@ button[type="button"]:hover, button[type="submit"]:hover {
   color: #DAFF3D;
   font-size: 28px;
   font-weight: 900; 
-  font-family: 'Roboto Condensed', sans-serif;
+
   text-shadow: 4px 2px 0px #000000; 
   text-align: center; 
   
@@ -284,7 +284,7 @@ button[type="button"]:hover, button[type="submit"]:hover {
   color: #4A00A5;
   font-size: 28px;
   font-weight: 900; 
-  font-family: 'Roboto Condensed', sans-serif;
+
   text-shadow: 3px 3px 0px #a4be2c; 
   text-align: center; 
 }
