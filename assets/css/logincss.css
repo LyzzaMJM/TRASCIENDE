@@ -512,3 +512,14 @@ footer {
 
 
 
+/* MOUSE */
+#custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: #4A00A5; 
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
