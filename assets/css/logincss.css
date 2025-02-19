@@ -1,0 +1,482 @@
+body {
+  background-image: url('../img/fondodosin.png');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #000000;
+  line-height: var(--bs-body-line-height);
+  
+}
+
+
+.container {
+  max-width: 750px; /* Disminuir el ancho */
+  padding: 1px; /* Reducir el padding */
+}
+
+#formContainer {
+  padding: 3px; /* Reducir aún más el padding */
+}
+
+button {
+  padding: 8px 15px; /* Reducir el tamaño sin afectar diseño */
+}
+
+
+.py-5 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+
+.form-switch button {
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.form-switch button.active {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Estilo de las imágenes */
+#imageContainer img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+#imageContainer img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Formulario de Login - Color morado */
+#loginForm {
+  background-color: #4A00A5;;
+  color: white;
+  border-radius: 22px;
+  box-shadow: 10px 6px 0px #DAFF3D;
+}
+
+#loginForm .form-title h3 {
+  color: #8a8a8a;
+  font-size: 22px;
+}
+
+#loginForm .form-label {
+  color: #ffffff;
+}
+
+#loginForm .form-control {
+  background-color: #9b75c9;
+  border: 1px solid #DAFF3D;
+  border-radius: 13px;
+  
+}
+
+#loginForm .btn-primary {
+  background-color: #DAFF3D;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  color: #4A00A5;
+  transition: background-color 0.3s ease;
+}
+
+#loginForm .btn-primary:hover {
+  background-color: #a7c230;
+ 
+}
+
+
+
+
+
+
+/* Formulario de Registro */
+#crearcuenta{
+  box-shadow: #2f0366;
+  color: darkblue;
+}
+
+#registerForm {
+  background-color: #DAFF3D;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 10px 6px 0px #4A00A5;
+}
+
+#registerForm .form-title h3 {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+#registerForm .form-label {
+  color: #000000;
+  font-weight: bold;
+}
+
+#registerForm .form-control {
+  background-color: #a7c230;
+  border: 1px solid #4A00A5;
+  border-radius: 13px;
+}
+
+#registerForm .btn-success {
+  background-color: #4A00A5;
+  border: none;
+  border-radius: 13px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#registerForm .btn-success:hover {
+  background-color: #2f0366;
+}
+
+
+.input-group-text i {
+  color: #DAFF3D;
+
+}
+
+#rei{
+  color: #4A00A5;
+}
+#togglePasswordRegister i {
+  color: #4A00A5; 
+}
+
+
+
+.title-register {
+  font-size: 22px;
+  font-weight: bold;
+  color: #DAFF3D; /* Verde */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/*hhh*/
+
+.btn-outline-secondary {
+  border: none !important;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-border-color: transparent;
+  box-shadow: none !important;
+}
+
+
+
+
+
+
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: .375rem .75rem;
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  text-align: center;
+  white-space: nowrap;
+  background-color: transparent; 
+  border: none;
+  border-radius: var(--bs-border-radius);
+}
+
+/*hhh*/
+
+
+
+
+#loginGoogleBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #DAFF3D; /* Verde claro */
+  border: 2px solid #a7c230; /* Borde más definido */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#loginGoogleBtn i {
+  margin: 0; 
+}
+
+
+
+
+
+
+
+.btn-outline-secondary i {
+  color: #DAFF3D;
+}
+
+.btn-outline-secondary:hover i {
+  color: #DAFF3D;
+}
+
+/* Formulario de usuario */
+.form-control {
+  border-radius: 8px;
+}
+
+/* Efecto hover en los botones */
+button[type="button"], button[type="submit"] {
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+button[type="button"]:hover, button[type="submit"]:hover {
+  transform: translateY(-3px);
+}
+
+/* Formulario responsivo */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+ 
+  #imageContainer {
+    display: none;
+  }
+  
+  
+}
+
+
+/* Títulos dentro de los formularios */
+#loginForm .form-title h3, 
+#registerForm .form-title h3 {
+  text-transform: uppercase;
+}
+
+/* Títulos específicos según el formulario */
+#loginForm .form-title h3 {
+
+  color: #DAFF3D;
+  font-size: 28px;
+  font-weight: 900; 
+  font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: 4px 2px 0px #000000; 
+  text-align: center; 
+  
+}
+
+#registerForm .form-title h3 {
+
+  color: #4A00A5;
+  font-size: 28px;
+  font-weight: 900; 
+  font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: 3px 3px 0px #000000; 
+  text-align: center; 
+}
+
+
+
+/* Botones para alternar entre formularios */
+.form-switch button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+ 
+}
+
+/* Botón de Iniciar sesión */
+#loginBtn {
+  background-color: #4A00A5;
+  color: #DAFF3D;
+  border: #DAFF3D;
+}
+
+#loginBtn:hover {
+  background-color: rgb(55, 28, 92);
+  transform: translateY(-3px);
+}
+
+/* Botón de Registrarse */
+#registerBtn {
+  background-color: #DAFF3D;
+  color: #4A00A5;
+  border-color: #4A00A5;
+
+}
+
+#registerBtn:hover {
+  background-color: #a4be2c;
+  transform: translateY(-3px);
+}
+
+
+.form-switch button.active {
+  background-color: #4A00A5;
+  color: #DAFF3D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+  background-color: #DAFF3D; 
+  color: rgb(0, 0, 0);
+  padding: 5px 9px;
+  margin: 6px auto;
+  border-radius: 15px; 
+  text-align: center;
+
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15); 
+  width: 95%;
+}
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #4A00A5;
+}
+
+
+.rights {
+  font-size: 12px;
+  text-align: right;
+}
+.rights p {
+  margin: 3px 0;
+}
+.rights a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.rights a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; 
+      align-items: center;
+      text-align: center;
+  }
+
+  .social-icons {
+      margin-bottom: 10px;
+      justify-content: center;
+  }
+
+  .rights {
+      text-align: center; /
+  }
+}
+
+.input-group-text i {
+  font-size: 1.2rem; /* Ajusta el tamaño según lo necesites */
+ 
+  text-align: center;
+}
+
+
+
+
+
+
+/* ----- NAVBAR ----- */
+.navbar {
+  background-color: #DAFF3D;
+  border-radius: 15px;
+  padding: 5px 9px;
+  margin: 6px auto;
+  width: 95%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand img {
+  width: 60px;
+  height: auto;
+}
+
+/* Estilos del botón de colapso */
+.navbar-toggler {
+  background-color: #000000;
+  border: 1px solid #fff;
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-toggler:hover {
+  background-color: #4A00A5;
+  transform: scale(1.1);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.mb-4 {
+  margin-bottom: 0 px;
+}
+
+
+.navbar h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #4A00A5;
+  margin: 0 auto;
+  letter-spacing: 2px;
+
+  text-shadow: 0 0 2px #4A00A5, 0 0 10px #7B00FF, 0 0 15px #AA00FF;
+  animation: glowText 1.5s infinite alternate;
+}
+@keyframes glowText {
+  0% { text-shadow: 0 0 3px #4A00A5, 0 0 6px #7B00FF; }
+  100% { text-shadow: 0 0 6px #7B00FF, 0 0 9px #AA00FF; }
+}

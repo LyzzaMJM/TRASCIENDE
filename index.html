@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasciende</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logocorto.png" alt="Logo" width="60">
+            </a>
+
+            <!-- Botón de colapso para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Menú desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+                            MENU
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#nuestros-programas">PROGRAMAS</a></li>
+                            <li><a class="dropdown-item" href="#ferias-vocacionales">FERIAS</a></li>
+                            <li><a class="dropdown-item" href="#unete-equipo">COMUNIDAD</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto-formulario">CONTÁCTANOS</a></li>
+                    
+                    <!-- Botones de Login y Sign Up -->
+                    <li class="nav-item ms-3">
+                        <a href="assets/html/login.html#loginForm" class="btn btn-outline-dark">LOGIN</a>
+                        <a href="assets/html/login.html#registerForm" class="btn btn-dark ms-2">SIGN UP</a>
+                    </li>
+                    
+
+                    <!-- Barra de búsqueda con lupa -->
+                    <li class="nav-item ms-3">
+                        <div class="search-container">
+                            <button class="search-btn" id="search-btn">🔍</button>
+                            <input type="search" id="search-box" placeholder="Buscar..." aria-label="Buscar">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div>
+            <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Contenido Izquierdo -->
+                    <div class="col-md-6">
+                        <div id="titulo-bienvenida">
+                            <h1 class="hero-title">UN MOVIMIENTO <br>POR LA<br> <span> TRASCENDENCIA</span></h1>
+                          
+                        </div>
+
+                        <div class="text-center">
+                            <p class="hero-text mt-4">Una plataforma educativa que impulsa el desarrollo personal y profesional. Explora nuestros programas y eventos diseñados para ayudarte a crecer.</p>
+                            <a href="#saber-mas" class="btn hero-btn d-inline-flex align-items-center"> <strong>
+                                SABER MÁS <span class="ms-2">→</span>
+                            </strong>
+                            </a>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <!-- Imagen Derecha -->
+                    <div class="col-md-6 text-center">
+                        <img src="/assets/img/student-circulo.png" alt="Ilustración Hero" class="hero-image img-fluid">
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrusel de frases o logos -->
+        <div class="marquee-container">
+            <div class="marquee-wrapper">
+                <div class="marquee">
+                    🌟 Innovación Educativa 🚀 | 🔥 Empoderamiento 💡 | 📚 Crecimiento Profesional | 🏆 Oportunidades Globales ✨
+                </div>
+                <div class="marquee">
+                    🌟 Innovación Educativa 🚀 | 🔥 Empoderamiento 💡 | 📚 Crecimiento Profesional | 🏆 Oportunidades Globales ✨
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+    <!-- Sección Saber Más -->
+    <section id="saber-mas" class="container py-5">
+        <div class="row align-items-center">
+            <!-- Imagen a la izquierda -->
+            <div class="col-md-6">
+                <img src="assets/img/sabiasque.jpg" alt="Búsqueda vocacional" class="img-fluid rounded shadow" width="600px">
+            </div>
+            
+            <!-- Texto a la derecha -->
+            <div class="col-md-6">
+                <div class="card shadow-lg p-4">
+                    <h2 class="text-center fw-bold">¿Sabías que...?</h2>
+                    <p class="text-center fs-5">
+                        Hoy más que nunca es necesario y relevante que conversemos sobre búsqueda vocacional.
+                    </p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>📌 80%</strong> de escolares no sabe qué estudiar cuando está por terminar el colegio.</li>
+                        <li class="list-group-item"><strong>📌 65%</strong> de estudiantes de nivel inicial estudiará una carrera que aún no existe.</li>
+                        <li class="list-group-item"><strong>📌 Solo un 9,1%</strong> de estudiantes en 2do de secundaria percibe que puede colaborar con sus pares para hacer frente a desafíos sociales.</li>
+                    </ul>
+                    <p class="text-muted text-end mt-3">
+                        <small>Fuente: Gestión, 2022; Foro Económico Mundial, 2023 y MINEDU Evaluación Muestral de Estudiantes, 2022.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- NUESTROS PROGRAMAS -->
+
+    <section class="programas container text-center my-5" id="nuestros-programas">
+        <h2 class="mb-4 tittle2">NUESTROS PROGRAMAS</h2>
+        <div class="row justify-content-center">
+            <!-- 1 tarjeta  -->
+            <div class="col-md-5 d-flex align-items-center">
+                <img src="assets/img/pruebadose.jpg" alt="Conecta" class="img-fluid me-3">
+                <div class="programa-card neon" onclick="window.location.href='conecta.html'">
+                    <div class="card-inner">
+                        <div class="front">
+                            <h3><strong>CONECTA</strong></h3>
+                        </div>
+                        <div class="back">
+                            <h3>Un programa diseñado para conectar talentos con oportunidades.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 tarje -->
+            <div class="col-md-5 d-flex align-items-center">
+                <img src="assets/img/pruebaunose.jpg" alt="Ferias" class="img-fluid me-3">
+                <div class="programa-card black" onclick="window.location.href='feriasque.html'">
+                    <div class="card-inner">
+                        <div class="front">
+                            <h3><strong>FERIAS QUE TRASCIENDEN</strong></h3>
+                        </div>
+                        <div class="back">
+                            <h3>Espacios donde jóvenes encuentran su camino profesional.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FERIAS VOCACIONALES -->
+    <section class="ferias container text-center my-5" id="ferias-vocacionales">
+        <h2 class="mb-4 tittle2">FERIAS VOCACIONALES</h2>
+        <div class="ferias-grid">
+            <div class="ferias-info">
+                <h3>Explora tus Opciones</h3>
+                <p>Sumérgete en un mundo de posibilidades académicas y descubre la carrera que mejor se adapta a tus habilidades e intereses.</p>
+            </div>
+            <div><img src="assets/img/feriauno.jpg" class="ferias-img"></div>
+
+            <div class="ferias-info">
+                <h3>Asesoramiento Especializado</h3>
+                <p>Aprovecha la oportunidad de recibir asesoramiento directo de especialistas en diversas industrias. Resuelve tus dudas y prepárate para el mundo laboral.</p>
+            </div>
+            <div><img src="assets/img/feriados.jpg" class="ferias-img"></div>
+
+            <div class="ferias-info">
+                <h3>Eventos y Becas</h3>
+                <p>Participa en eventos académicos organizados por instituciones educativas de todo el país. Infórmate sobre becas, planes de estudio y oportunidades de intercambio.</p>
+            </div>
+            <div><img src="assets/img/feriatres.jpg" class="ferias-img"></div>
+        </div>
+    </section>
+
+
+
+
+  
+
+
+
+
+    <!-- ÚNETE A NUESTRO EQUIPO -->
+    <section class="unete container text-center my-5" id="unete-equipo">
+        <div class="equipo-content">
+            <h2 class="mb-4 tittle2" id="equipofoto">ÚNETE A NUESTRO <br> EQUIPO</h2>
+            <div class="circle-container">
+                <img src="assets/img/circuloreal.png" class="team-img">
+            </div>
+        
+            <a href="assets/html/login.html" class="btn btn-dark btn-lg" id="unirme-btn">UNIRME <span class="ms-2">→</span></a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="sobre-nosotros container text-center my-5" id="sobre-nosotros">
+        <h2 class="mb-4 tittle2">SOBRE NOSOTROS</h2>
+        
+        <div class="presentacion">
+            <p id="presentaciontexto">Somos una organización dedicada a brindar oportunidades educativas accesibles y de calidad. Creemos en el poder del conocimiento para transformar vidas y construir un futuro mejor.</p>   
+        </div>
+
+
+
+        <div class="sentido-empresa">
+            <!-- Sentido de la empresa (lo que ES y NO ES) -->
+            <div class="sentido-title text-center">
+                <h3 class="sentido-header">¿Qué ES y qué NO ES</h3> <img src="assets/img/logocorto.png" alt="Logo de Trasciende" class="sentido-logo"> <h3 class="sentido-header"> ?</h3>
+            </div>
+            <div class="row sentido-content">
+                <div class="col-md-6 sentido-col es-col">
+                    <div class="sentido-card">
+                        <h4><strong>ES:</strong></h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Sentido que guía mi existencia.</li>
+                            <li><i class="fas fa-check-circle"></i> A partir de un llamado trascendente.</li>
+                            <li><i class="fas fa-check-circle"></i> Integrar nuestras experiencias en nuestra historia personal.</li>
+                            <li><i class="fas fa-check-circle"></i> Para ponerse al servicio de los demás.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 sentido-col no-es-col">
+                    <div class="sentido-card">
+                        <h4><strong>NO ES:</strong></h4>
+                        <ul>
+                            <li><i class="fas fa-times-circle"></i> Un lujo de quienes tienen su vida solucionada.</li>
+                            <li><i class="fas fa-times-circle"></i> Tu profesión o trabajo.</li>
+                            <li><i class="fas fa-times-circle"></i> Tus metas.</li>
+                            <li><i class="fas fa-times-circle"></i> Satisfacer tus necesidades de poder, placer, prestigio (reconocimiento) o poseer cosas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+        
+
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mision-vision">
+                    <h3 class="titulo-mision">Misión</h3>
+                    <p class="texto-mision">Brindar oportunidades educativas accesibles y de calidad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo officia quis animi voluptate eveniet illo, dolores ratione quibusdam assumenda aspernatur labore eaque laboriosam? Nisi molestiae ex iure quia ab debitis?</p>
+                    <h3 class="titulo-vision">Visión</h3>
+                    <p class="texto-vision">Ser líderes en el empoderamiento de jóvenes a través de la educación. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, non. Labore quod repellendus vero eum officiis eaque, itaque odio! In at magnam veniam dignissimos odio numquam iusto ea quia expedita.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-grid">
+                    <img src="assets/img/aboutuno.jpg" class="about-img img-1">
+                    <img src="assets/img/aboutdos.jpg" class="about-img img-3">
+                    <img src="assets/img/aboutcuatro.jpg" class="about-img img-4">
+                    <img src="assets/img/aboutcinco.jpg" class="about-img img-1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+ 
+    <!-- CONTACTANOS -->
+    <section class="contacto-section text-center my-5" id="contacto-formulario">
+        <h2 class="mb-4 tittle2">CONTÁCTANOS</h2>
+        <div class="contacto">
+            <div class="contacto-form-container">
+                <form class="contacto-form">
+                    <strong>Nombre</strong> 
+                    <input type="text" class="form-control" placeholder="Nombre" required> <strong>Correo Electrónico</strong> 
+                    <input type="email" class="form-control" placeholder="Correo Electrónico" required><strong>Número de Teléfono</strong>
+                    <input type="tel" class="form-control" placeholder="Número de Teléfono" required inputmode="numeric" oninput="this.value = this.value.replace(/\D/g, '')">
+                    
+                    <strong>Mensaje</strong> 
+                    <textarea class="form-control" placeholder="Mensaje" required></textarea> 
+
+                    <br>
+
+                    <button type="submit" class="btn btn-custom">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="overlay"></div>
+    <div class="modal-exito">
+        <p>¡Enviado con éxito! 🎉</p>
+        <button> <strong> Aceptar</strong></button>
+    </div>
+
+
+
+    <!-- FOOTER -->
+ 
+  
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/perutrasciende"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/perutrasciende/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/perutrasciende"><i class="fab fa-youtube"></i></a>
+                <a href="https://pe.linkedin.com/company/perutrasciende"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="rights">
+                <p> <strong> © 2022 Trasciende - Derechos Reservados</strong> </p>
+                <a><strong>Política de Privacidad</strong></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
