@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fondopadres.png');
+    cursor: none;
+
+}
+
 /* ----- NAVBAR PRINCIPAL ----- */
 .navbar {
     background-color: #DAFF3D !important;  /* Forzar color amarillo */
@@ -170,4 +178,292 @@
 
 .btn-purple:hover {
     background-color: #360080 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TITULO*/
+.header-custom {
+ 
+    text-align: center;
+    
+
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    text-transform: uppercase;
+
+    background: linear-gradient(90deg, #4A00A5, #DAFF3D);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: #DAFF3D; 
+    color: rgb(0, 0, 0);
+    padding: 10px 15px; 
+    border-radius: 15px; 
+    text-align: center;
+    margin: 15px; 
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15); 
+}
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4A00A5;
+}
+
+
+.rights {
+    font-size: 12px;
+    text-align: right;
+}
+.rights p {
+    margin: 3px 0;
+}
+.rights a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.rights a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .rights {
+        text-align: center; /
+    }
+}
+
+
+.sentido-empresa {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 10px;
+    margin-bottom: 50px;
+}
+
+.sentido-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sentido-header {
+    font-size: 1.8rem;
+    color: #4A00A5;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.sentido-logo {
+    width: 50px;
+    height: auto;
+
+}
+
+.sentido-content {
+    display: flex;
+    gap: 20px; 
+    justify-content: space-between;
+}
+
+.sentido-col {
+    background-color: #DAFF3D;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex: 1; 
+    max-width: 45%; 
+}
+
+.sentido-col:hover {
+    transform: translateY(-5px);
+}
+
+.sentido-card {
+    padding: 15px;
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    border-radius: 8px;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.sentido-col h4 {
+    color: #6B00D7;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.sentido-col ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.sentido-col ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.sentido-col ul li i {
+    margin-right: 12px;
+}
+
+.fas.fa-check-circle {
+    color: green;
+}
+
+.fas.fa-times-circle {
+    color: red;
+}
+
+.es-col {
+    border-left: 5px solid #AFD031;
+}
+
+.no-es-col {
+    border-left: 5px solid #FF4B2B;
+}
+
+@media (max-width: 767px) {
+    .sentido-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sentido-col {
+        margin-bottom: 20px;
+        max-width: 100%; 
+    }
+}
+
+
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #DAFF3D, #4A00A5);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #DAFF3D, #4A00A5);
+  box-shadow: 0px 0px 10px rgba(218, 255, 61, 0.75), 
+              0px 0px 10px rgba(74, 0, 165, 0.75);
+}
+
+
+
+
+/* MOUSE */
+#custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: #4A00A5; 
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
+
+
+#webinars, #proyectos {
+    color: #000000;
+    font-size: 56px;
+    font-weight: 900; 
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 4px 2px 0px #AFD031; /* Ajuste al color verde lima */
+    text-align: center; 
+    margin-bottom: 30px;
 }

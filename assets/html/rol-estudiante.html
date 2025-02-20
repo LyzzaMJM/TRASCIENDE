@@ -14,32 +14,43 @@
 
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="https://trasciende.com.pe/wp-content/uploads/2021/08/Logo_Trasciende.png" alt="Logo" width="60">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/index.html">
+            <img src="../img/logocorto.png" alt="Logo" width="60">
         </a>
+
+        <!-- Botón de colapso para móviles -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Menú de navegación -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown">
-                        MENU
+                        MENÚ
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#nuestros-programas">PROGRAMAS</a></li>
-                        <li><a class="dropdown-item" href="#ferias-vocacionales">FERIAS</a></li>
-                        <li><a class="dropdown-item" href="#unete-equipo">COMUNIDAD</a></li>
+                        <li><a class="dropdown-item" href="#importancia">IMPORTANCIA</a></li>
+                        <li><a class="dropdown-item" href="#proyectos">PROYECTOS</a></li>
+                        <li><a class="dropdown-item" href="#podcast">PODCAST</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto-formulario">CONTÁCTANOS</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="#webinars">WEBINARS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonios">TESTIMONIOS</a></li>
+                
+                <!-- Botón de Logout con ID -->
                 <li class="nav-item ms-3">
-                    <button id="logoutBtn" class="btn btn-danger">Cerrar sesión</button>
+                    <a href="#" class="btn btn-dark ms-2" id="logoutBtn">SIGN OUT</a>
                 </li>
+
+                <!-- Barra de búsqueda con lupa -->
                 <li class="nav-item ms-3">
                     <div class="search-container">
                         <button class="search-btn" id="search-btn">🔍</button>
@@ -49,50 +60,105 @@
             </ul>
         </div>
     </div>
-</nav>
+  </nav>
 
-<main class="container mt-4">
-    <h1 class="text-center">Estudiante</h1>
-    <section class="text-center my-5">
-        <h2>Proyectos Anteriores</h2>
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="https://youtu.be/NYLF2Hc6WmY" target="_blank">
-                <img src="https://img.youtube.com/vi/NYLF2Hc6WmY/0.jpg" alt="Día 1" class="preview-img">
-                📺 Antiferia Vocacional Virtual:<br> Día 1 para estudiantes
-            </a>
-            <a href="https://youtu.be/CU8dARRERaU" target="_blank">
-                <img src="https://img.youtube.com/vi/CU8dARRERaU/0.jpg" alt="Día 2" class="preview-img">
-                📺 Antiferia Vocacional Virtual:<br> Día 2 para estudiantes
-            </a>
-            <a href="https://youtu.be/0QSuu7-t4A8" target="_blank">
-                <img src="https://img.youtube.com/vi/0QSuu7-t4A8/0.jpg" alt="Día 3" class="preview-img">
-                📺 Antiferia Vocacional Virtual:<br> Día 3 para estudiantes
-            </a>
-        </div>
-    </section>
-    <section class="row my-5 justify-content-center">
-        <div class="col-lg-6 text-center">
-            <h2>Guía para Estudiantes</h2>
-            <iframe class="w-100" height="500" src="https://drive.google.com/file/d/1nJYAB97mmpIMI9D6CAbcjhkh9LMMco6B/preview?embedded=true" allow="autoplay"></iframe>
-        </div>
-        <div class="col-lg-6 text-center">
-            <h2>Serie Web GPS Vocacional</h2>
-            <div class="d-flex justify-content-center">
-                <a href="https://www.youtube.com/playlist?list=PL9Z1Zo1CQy_mTdTJCbkmQ17oiG_a4vkfv" class="btn btn-purple btn-lg" target="_blank">📺 Ver Lista de Reproducción</a>
-            </div>
-        </div>
-    </section>
-    <section class="text-center my-5">
-        <h2>Escucha nuestro Podcast</h2>
-        <p>Son 8 episodios con ejes temáticos de: Enamórate del problema, Objetivos de Desarrollo Sostenible, Corrupción, Salud, Medio Ambiente, Crecimiento Económico, Tecnología y cierre con los jóvenes.</p>
-        <a href="https://bit.ly/EpisodiosPodcastsTCD21" class="btn btn-primary btn-lg" target="_blank">🎧 Escuchar Episodios del Podcast</a>
-    </section>
-</main>
 
-<footer class="bg-light text-center py-3">
-    <p>&copy; 2025 Trasciende</p>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <header class="header-custom py-4">
+    <h1>Bienvenido, <span id="user-name"></span>!</h1>
+  </header>
+  
+
+  <main class="container mt-4">
+      <section class="text-center my-5">
+          <h2>¿Por qué es importante elegir una vocación?</h2>
+          <p>Elegir una vocación define el camino que tomarás en tu vida profesional y personal. Una buena elección puede llevarte al éxito y la felicidad.</p>
+          <h3>Preguntas Frecuentes</h3>
+          <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                          ¿Qué es una vocación?
+                      </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">Es una inclinación natural hacia una determinada profesión o actividad.</div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                          ¿Es una vocación para siempre?
+                      </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">No necesariamente, puede evolucionar a lo largo de la vida.</div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="text-center my-5">
+          <h2>Proyectos Anteriores</h2>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="https://youtu.be/NYLF2Hc6WmY" target="_blank">
+                  <img src="https://img.youtube.com/vi/NYLF2Hc6WmY/0.jpg" alt="Día 1" class="preview-img">
+                  📺 Antiferia Vocacional Virtual: Día 1
+              </a>
+              <a href="https://youtu.be/CU8dARRERaU" target="_blank">
+                  <img src="https://img.youtube.com/vi/CU8dARRERaU/0.jpg" alt="Día 2" class="preview-img">
+                  📺 Antiferia Vocacional Virtual: Día 2
+              </a>
+              <a href="https://youtu.be/0QSuu7-t4A8" target="_blank">
+                  <img src="https://img.youtube.com/vi/0QSuu7-t4A8/0.jpg" alt="Día 3" class="preview-img">
+                  📺 Antiferia Vocacional Virtual: Día 3
+              </a>
+          </div>
+      </section>
+
+      <section class="row my-5 justify-content-center">
+          <div class="col-lg-6 text-center">
+              <h2>Guía para Estudiantes</h2>
+              <iframe class="w-100" height="500" src="https://drive.google.com/file/d/1nJYAB97mmpIMI9D6CAbcjhkh9LMMco6B/preview" allow="autoplay"></iframe>
+          </div>
+          <div class="col-lg-6 text-center">
+              <h2>Serie Web GPS Vocacional</h2>
+              <a href="https://www.youtube.com/playlist?list=PL9Z1Zo1CQy_mTdTJCbkmQ17oiG_a4vkfv" class="btn btn-purple btn-lg" target="_blank">📺 Ver Lista de Reproducción</a>
+          </div>
+      </section>
+
+      <section class="text-center my-5">
+          <h2>Escucha nuestro Podcast</h2>
+          <p>Son 8 episodios con ejes temáticos sobre problemas globales y vocación.</p>
+          <a href="https://bit.ly/EpisodiosPodcastsTCD21" class="btn btn-primary btn-lg" target="_blank">🎧 Escuchar Episodios del Podcast</a>
+      </section>
+  </main>
+
+
+
+  <footer>
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/perutrasciende"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/perutrasciende/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/perutrasciende"><i class="fab fa-youtube"></i></a>
+            <a href="https://pe.linkedin.com/company/perutrasciende"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="rights">
+            <p> <strong> © 2022 Trasciende - Derechos Reservados</strong> </p>
+            <a><strong>Política de Privacidad</strong></a>
+        </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="../js/dashboard.js"></script>
+  <script  type="module" src="../js/rol-student.js"></script>
 </body>
 </html>
