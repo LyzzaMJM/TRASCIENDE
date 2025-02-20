@@ -1,6 +1,9 @@
 /* ----- GENERAL ----- */
 
-  
+* {
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
 body {
     
     margin: 0;

@@ -7,6 +7,9 @@ body {
   line-height: var(--bs-body-line-height);
   
 }
+* {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
 
 
 .container {

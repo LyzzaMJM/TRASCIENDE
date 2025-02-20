@@ -6,6 +6,11 @@ body {
 
 }
 
+* {
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+
 /* ----- NAVBAR PRINCIPAL ----- */
 .navbar {
     background-color: #DAFF3D !important;  /* Forzar color amarillo */

@@ -6,6 +6,11 @@ body {
 
 }
 
+* {
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+
 /* ----- NAVBAR ----- */
 .navbar {
     background-color: #DAFF3D; 
@@ -177,34 +182,37 @@ body {
 
 
 
-/*INTRO*/
+/* Estilos para la caja de información */
 .info-box {
-    color: #000000; 
+    background-color: white; /* Fondo blanco */
     padding: 20px;
     border-radius: 12px;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
     word-wrap: break-word;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Sombra para dar efecto de elevación */
+    position: relative; /* Necesario para el efecto */
 }
 
-
-
+/* Estilos del título */
 .info-box h3 {
-
     font-size: 2.5rem;
     font-weight: bold;
     color: #4A00A5;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 2; /* Asegura que esté por encima */
 }
 
+/* Estilos del párrafo */
 .info-box p {
     font-size: 1.1rem;
     line-height: 1.6;
     opacity: 0.9;
+    position: relative;
+    z-index: 2; /* Asegura que esté por encima */
 }
-
-
 
 
 
