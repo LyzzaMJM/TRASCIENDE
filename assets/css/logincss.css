@@ -2,13 +2,11 @@ body {
   background-image: url('../img/fondodosin.png');
   background-size: cover;
   background-position: center;
- 
+  font-family: 'Roboto Condensed', sans-serif !important;
+
   color: #000000;
   line-height: var(--bs-body-line-height);
   
-}
-* {
-  font-family: 'Roboto Condensed', sans-serif !important;
 }
 
 

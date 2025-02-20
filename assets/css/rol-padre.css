@@ -3,12 +3,9 @@ body {
     padding: 0;
     background-image: url('../img/fondopadres.png');
     cursor: none;
-
-}
-
-* {
     font-family: 'Roboto Condensed', sans-serif !important;
 }
+
 
 
 /* ----- NAVBAR ----- */
