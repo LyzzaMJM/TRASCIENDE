@@ -524,3 +524,31 @@ footer {
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out;
 }
+
+
+
+/* Ajuste para evitar que choque en la derecha en móviles */
+@media (max-width: 576px) {
+  #formContainer {
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; /* Reducir el ancho para dar espacio en ambos lados */
+  }
+
+  form {
+    padding: 1rem !important;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  .form-title h3 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}

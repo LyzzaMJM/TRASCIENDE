@@ -150,41 +150,41 @@
 
 
 
-    <!-- NUESTROS PROGRAMAS -->
+        <!-- NUESTROS PROGRAMAS -->
+        <section class="programas container text-center my-5" id="nuestros-programas">
+            <h2 class="mb-4 tittle3">NUESTROS PROGRAMAS</h2>
+            <div class="row justify-content-center">
+                <!-- 1 tarjeta -->
+                <div class="col-12 col-md-5 d-flex align-items-center justify-content-center mb-4">
+                    <img src="assets/img/pruebadose.jpg" alt="Conecta" class="img-fluid me-3 d-none d-md-block" id="sabiasqueimg">
+                    <div class="programa-card neon" onclick="window.location.href='conecta.html'">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h3><strong>CONECTA</strong></h3>
+                            </div>
+                            <div class="back">
+                                <h3>Un programa diseñado para conectar talentos con oportunidades.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 tarjeta -->
+                <div class="col-12 col-md-5 d-flex align-items-center justify-content-center mb-4">
+                    <img src="assets/img/pruebaunose.jpg" alt="Ferias" class="img-fluid me-3 d-none d-md-block" id="sabiasqueimg">
+                    <div class="programa-card black" onclick="window.location.href='feriasque.html'">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h3><strong>FERIAS QUE TRASCIENDEN</strong></h3>
+                            </div>
+                            <div class="back">
+                                <h3>Espacios donde jóvenes encuentran su camino profesional.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="programas container text-center my-5" id="nuestros-programas">
-        <h2 class="mb-4 tittle3">NUESTROS PROGRAMAS</h2>
-        <div class="row justify-content-center">
-            <!-- 1 tarjeta  -->
-            <div class="col-md-5 d-flex align-items-center">
-                <img src="assets/img/pruebadose.jpg" alt="Conecta" class="img-fluid me-3"  id="sabiasqueimg">
-                <div class="programa-card neon" onclick="window.location.href='conecta.html'">
-                    <div class="card-inner">
-                        <div class="front">
-                            <h3><strong>CONECTA</strong></h3>
-                        </div>
-                        <div class="back">
-                            <h3>Un programa diseñado para conectar talentos con oportunidades.</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 2 tarje -->
-            <div class="col-md-5 d-flex align-items-center">
-                <img src="assets/img/pruebaunose.jpg" alt="Ferias" class="img-fluid me-3"  id="sabiasqueimg">
-                <div class="programa-card black" onclick="window.location.href='feriasque.html'">
-                    <div class="card-inner">
-                        <div class="front">
-                            <h3><strong>FERIAS QUE TRASCIENDEN</strong></h3>
-                        </div>
-                        <div class="back">
-                            <h3>Espacios donde jóvenes encuentran su camino profesional.</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <!-- FERIAS VOCACIONALES -->
@@ -310,27 +310,30 @@
 
  
     <!-- CONTACTANOS -->
-    <section class="contacto-section text-center my-5" id="contacto-formulario">
+    <section class="contacto-section text-center my-5 px-3" id="contacto-formulario">
         <h2 class="mb-4 tittle3">CONTÁCTANOS</h2>
         <div class="contacto">
-            <div class="contacto-form-container">
-                <form class="contacto-form">
-                    <strong>Nombre</strong> 
-                    <input type="text" class="form-control" placeholder="Nombre" required> <strong>Correo Electrónico</strong> 
-                    <input type="email" class="form-control" placeholder="Correo Electrónico" required><strong>Número de Teléfono</strong>
-                    <input type="tel" class="form-control" placeholder="Número de Teléfono" required inputmode="numeric" oninput="this.value = this.value.replace(/\D/g, '')">
+            <div class="contacto-form-container d-flex justify-content-center">
+                <form class="contacto-form col-12 col-md-6 col-lg-4 p-3 rounded">
+                    <strong>Nombre</strong>
+                    <input type="text" class="form-control mb-3" placeholder="Nombre" required>
                     
-                    <strong>Mensaje</strong> 
-                    <textarea class="form-control" placeholder="Mensaje" required></textarea> 
+                    <strong>Correo Electrónico</strong>
+                    <input type="email" class="form-control mb-3" placeholder="Correo Electrónico" required>
+                    
+                    <strong>Número de Teléfono</strong>
+                    <input type="tel" class="form-control mb-3" placeholder="Número de Teléfono" required inputmode="numeric" oninput="this.value = this.value.replace(/\D/g, '')">
+                    
+                    <strong>Mensaje</strong>
+                    <textarea class="form-control mb-3" placeholder="Mensaje" required></textarea>
 
-                    <br>
-
-                    <button type="submit" class="btn btn-custom">Enviar</button>
-
+                    <button type="submit" class="btn btn-custom mt-3">Enviar</button>
                 </form>
             </div>
         </div>
     </section>
+
+
 
 
 

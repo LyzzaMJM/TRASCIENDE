@@ -739,7 +739,48 @@ footer {
     font-size: 36px;
     font-weight: 900; 
     font-family: 'Roboto Condensed', sans-serif;
-    text-shadow: 4px 2px 0px #AFD031; /* Ajuste al color verde lima */
+    text-shadow: 4px 2px 0px #AFD031; 
     text-align: center; 
     margin-bottom: 30px;
 }
+
+
+@media (max-width: 576px) {
+    .info-box h3 {
+      font-size: 1.2rem; 
+    }
+  
+    .info-box p {
+      font-size: 0.9rem;
+    }
+}
+  
+
+/* Ajustes para versión móvil */
+@media (max-width: 576px) {
+  #testi {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-box {
+    padding: 1.5rem;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+
+  
