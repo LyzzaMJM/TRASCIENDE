@@ -21,7 +21,7 @@ body {
 
 /* ----- ESTILO DE LOS ENLACES ----- */
 .navbar .nav-link {
-    color: #000 !important; /* Asegura que los enlaces sean negros */
+    color: #000 ; /* Asegura que los enlaces sean negros */
     font-weight: 600;
     transition: color 0.3s ease;
 }
