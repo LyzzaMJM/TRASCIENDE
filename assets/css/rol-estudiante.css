@@ -8,6 +8,7 @@ body {
 
 
 
+
 /* ----- NAVBAR PRINCIPAL ----- */
 .navbar {
     background-color: #DAFF3D !important;  /* Forzar color amarillo */
@@ -74,20 +75,35 @@ body {
     color: #4A00A5;
 }
 
-/* ----- BOTÓN DE LOGOUT ----- */
-.btn-danger {
-    background-color: #000 !important;
-    color: #fff !important;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 30px; /* Hace el botón más ovalado */
-    transition: background-color 0.3s ease;
+/* ----- BOTONES ----- */
+.btn-outline-dark {
+    border-color: #000000;
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: 600;
+    border-radius: 18px;
+    transition: all 0.3s ease;
 }
 
-.btn-danger:hover {
-    background-color: #333 !important;
+.btn-outline-dark:hover {
+    background-color: #383535;
+    color: #ffffff;
 }
 
+.btn-dark {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+    border-color: #ffffff;
+    
+}
+
+.btn-dark:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
 /* ----- BARRA DE BÚSQUEDA ----- */
 .search-container {
     position: relative;
@@ -136,9 +152,7 @@ body {
 }
 
 /*  PROYECTOS ANTERIORES ----- */
-.text-center h2 {
-    margin-bottom: 30px;
-}
+
 
 .d-flex.flex-wrap {
     display: flex;
@@ -187,13 +201,6 @@ body {
 
 
 
-
-
-
-
-
-
-
 /*TITULO*/
 .header-custom {
  
@@ -225,6 +232,151 @@ h1 {
     }
 }
 
+
+
+
+
+/* Carrusel */
+#carouselExampleIndicators {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa y difusa */
+}
+
+#carouselExampleIndicators .carousel-inner img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators .active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion-button {
+    background-color: #ABE6F5;
+    color: #4A00A5;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #4A00A5;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.accordion-button:hover {
+    background-color: #DAFF3D;
+    color: #000000;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(74, 0, 165, 0.5);
+}
+
+.accordion-body {
+    padding: 5px 15px 15px 15px; /* Reducir el padding superior */
+    font-size: 1rem;
+    line-height: 1.6;
+    background: transparent;
+    color: #000000;
+    border-top: 1px solid #6a0dad;
+}
+
+.accordion-item {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+#acordeon {
+    background: #ffffff;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4A00A5;
+    text-shadow: #DAFF3D 5px 2px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilo para la sección de Guía para Estudiantes */
+#guia-estudiantes {
+    padding: 3rem 1rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+#guia-estudiantes h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #4A00A5; /* Color primario */
+}
+
+/* Estilo para el iframe */
+#guia-estudiantes iframe {
+    border: none;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 500px;
+}
+
+/* Asegurarse de que la columna sea centrada en pantallas más pequeñas */
+@media (max-width: 768px) {
+    #guia-estudiantes iframe {
+        height: 400px;
+    }
+
+    #guia-estudiantes h2 {
+        font-size: 1.75rem;
+    }
+}
 
 
 
@@ -433,13 +585,13 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #DAFF3D, #4A00A5);
+  background: linear-gradient(45deg, #DAFF3D, #4A00A5, #ABE6F5);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #DAFF3D, #4A00A5);
+  background: linear-gradient(45deg, #DAFF3D, #4A00A5, #ABE6F5);
   box-shadow: 0px 0px 10px rgba(218, 255, 61, 0.75), 
               0px 0px 10px rgba(74, 0, 165, 0.75);
 }
@@ -461,11 +613,137 @@ footer {
 
 
 #webinars, #proyectos {
-    color: #000000;
-    font-size: 56px;
+    color: #4A00A5;
+    font-size: 40px;
     font-weight: 900; 
     font-family: 'Roboto Condensed', sans-serif;
-    text-shadow: 4px 2px 0px #AFD031; /* Ajuste al color verde lima */
+    text-shadow: 4px 2px 0px #ABE6F5; /* Ajuste al color verde lima */
     text-align: center; 
     margin-bottom: 30px;
+}
+
+
+
+
+/* Estilos generales para ambas secciones */
+#serie-web-gps, #escucha-podcast {
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Títulos */
+#serie-web-gps h2, #escucha-podcast h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #4A00A5;
+}
+
+/* Estilos para los botones */
+.btn-purple {
+    background-color: #4A00A5;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #ABE6F5;
+}
+
+.btn-primary {
+    background-color: #4A00A5;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #360080;
+}
+
+/* Estilo para el iframe */
+iframe {
+    border: none;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 400px;
+    margin-bottom: 1.5rem;
+}
+
+/* Ajustes de diseño responsivo */
+@media (max-width: 768px) {
+    iframe {
+        height: 300px;
+    }
+
+    #serie-web-gps h2, #escucha-podcast h2 {
+        font-size: 1.75rem;
+    }
+}
+
+
+
+
+#nuestros-programas .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+#nuestros-programas .card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-5px); 
+}
+
+
+#nuestros-programas .ratio-16x9 iframe {
+    border-radius: 10px; 
+}
+
+
+#nuestros-programas h2 {
+    font-size: 2rem;
+    color: #4A00A5;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#nuestros-programas .lead {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+#nuestros-programas .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    #nuestros-programas .col-md-4 {
+        margin-bottom: 2rem;
+    }
+
+    #nuestros-programas h2 {
+        font-size: 1.6rem;
+    }
+
+    #nuestros-programas .lead {
+        font-size: 1rem;
+    }
 }

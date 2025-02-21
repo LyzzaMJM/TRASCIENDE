@@ -1,17 +1,629 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard Staff</title>
-    <!-- Tus hojas de estilo -->
-  </head>
-  <body>
-    <!-- Contenido del dashboard -->
-    <button id="logoutBtn">Cerrar sesión</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard STAFF</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/rol-staff.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <h1>STAFF</h1>
-    <!-- Incluye dashboard.js -->
-    <script type="module" src="../js/dashboard.js"></script>
-  </body>
+    <link rel="icon" type="image/png" href="../img/logocorto.png">
+  </head>
+<body>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/index.html">
+            <img src="../img/logocorto.png" alt="Logo" width="60">
+        </a>
+
+        <!-- Botón de colapso para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+                        MENÚ
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#staffzon">STAFF</a></li>
+                        <li><a class="dropdown-item" href="#presetrap">PRESENTACIÓN</a></li>
+                        <li><a class="dropdown-item" href="#rolertras">ROLES</a></li>
+                        <li><a class="dropdown-item" href="#logrosequi">LOGROS</a></li>
+                        <li><a class="dropdown-item" href="#redesso">REDES</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item"><a class="nav-link" href="#qyf">Q&A</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#filtrobusq">LISTA DE RECURSOS</a></li>
+                
+                    <!-- Botón de Logout con ID -->
+                    <li class="nav-item ms-3">
+                      <a href="#" class="btn btn-dark ms-2" id="logoutBtn">LOG OUT</a>
+                  </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <section id="entrada">
+    <h1 id="titulo-staff" class="text-center">¡Bienvenido al equipo de Staff de Trasciende!</h1>
+
+
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="../img/antiferiatres.png" class="d-block w-100" alt="Webinar 1">
+          </div>
+          <div class="carousel-item">
+              <img src="../img/antiferiados.jpg" class="d-block w-100" alt="Webinar 2">
+          </div>
+          <div class="carousel-item">
+              <img src="../img/antiferia.jpg" class="d-block w-100" alt="Webinar 3">
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+  <br>
+
+    <p class="text-center entrada-cita">
+      🌟 <strong>Somos el equipo que trabaja cada día para dejar una huella y ayudar a otros a trascender.</strong> 🌟
+    </p>
+  </section>
+
+
+  <div>
+      <!-- Galería de Imágenes -->
+
+
+      <section id="gallery-section" class="gallery container">
+        <div id="img-container-1" class="col-md-4"><img id="img-1" src="../img/aboutcinco.jpg" alt="Imagen 1"></div>
+        <div id="img-container-2" class="col-md-4"><img id="img-2" src="../img/aboutcuatro.jpg" alt="Imagen 2"></div>
+        <div id="img-container-3" class="col-md-4"><img id="img-3" src="../img/aboutdos.jpg" alt="Imagen 3"></div>
+      </section>
+      
+
+
+  <!-- Staff de Perú Trasciende -->
+  <h2 id="staffzon" class="section-title">Staff de Perú Trasciende</h2>
+    <section  class="staff-section">
+        <div class="staff-card">
+          <img src="../img/gihu.jpg" alt="Gilhu Vera" class="staff-photo">
+          <h3>Gilhu Vera</h3>
+        </div>
+
+      <div class="staff-card">
+        <img src="../img/gaston.jpg" alt="Gaston Madueño" class="staff-photo">
+        <h3>Gaston Madueño</h3>
+      </div>
+
+      <div class="staff-card">
+        <img src="../img/mari.jpg" alt="Marilyn Córdova" class="staff-photo">
+        <h3>Marilyn Córdova</h3>
+      </div>
+    </section>
+
+
+  
+      <!-- Presentación PPT -->
+      <div id="presetrap" class="presentation-container">
+        <h2 class="section-title">Presentación de Trasciende</h2>
+        <iframe src="https://docs.google.com/presentation/d/1cGXidSctf1NExncVgIwomCI6jicjQtbv/preview" width="100%" height="400px" allowfullscreen></iframe>
+      </div>
+
+    <!-- Mapa de Roles -->
+    <section id="rolertras" class="role-map-container">
+      <h2 class="section-title">Mapa de Roles</h2>
+      <section class="role-map">
+        <div class="role-card highlight">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Diseño Icon" class="role-icon">
+          <h3>Diseño</h3>
+          <p>Encargados del diseño visual y estético.</p>
+        </div>
+        <div class="role-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Desarrollo Icon" class="role-icon">
+          <h3>Desarrollo</h3>
+          <p>Responsables de la programación y la funcionalidad.</p>
+        </div>
+        <div class="role-card highlight">
+          <img src="https://cdn-icons-png.flaticon.com/512/753/753345.png" alt="Investigación Icon" class="role-icon">
+          <h3>Investigación</h3>
+          <p>Analizan datos y generan contenido relevante.</p>
+        </div>
+        <div class="role-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/1250/1250615.png" alt="Gestión de Proyecto Icon" class="role-icon">
+          <h3>Gestión de Proyecto</h3>
+          <p>Organizan tareas y tiempos del equipo.</p>
+        </div>
+      </section>
+    </section>
+
+
+  <section id="logrosequi" >
+      <!-- Logros del Equipo -->
+      <h2 class="section-title">Logros del Equipo</h2>
+      <ul class="logros-list">
+        <li>
+          <h3>🎓 Trasciende en la escuela agustina</h3>
+          <p>Compartimos con 120 estudiantes del Colegio San Agustín sobre vocación y propósito.</p>
+        </li>
+        <li>
+          <h3>🎭 Presentación final en la PUCP</h3>
+          <p>Asesoría en la creación del juego "¿Y ahora qué?" para apoyar la búsqueda vocacional.</p>
+        </li>
+        <li>
+          <h3>🚐 Feria vocacional en Áncash</h3>
+          <p>Participamos en "Propósito en Altura", guiando a 80 estudiantes en su futuro profesional.</p>
+        </li>
+      </ul>
+  </section>
+  
+
+
+
+
+
+
+
+    <!-- Preguntas Frecuentes - Perú Trasciende -->
+    <h2 id="qyf" class="section-title">Preguntas Frecuentes</h2>
+    <section  class="faq-section">
+      <div class="faq-card">
+        <h5>¿Qué es un Staff?</h5>
+        <p>Un Staff es un equipo de personas comprometidas que se encarga de gestionar, desarrollar y mantener un proyecto en funcionamiento, asegurando el cumplimiento de los objetivos.</p>
+      </div>
+      <div class="faq-card">
+        <h5>¿Qué hace un Staff?</h5>
+        <p>Organiza actividades, crea contenido, planifica estrategias y garantiza la coordinación eficiente de todas las áreas del proyecto.</p>
+      </div>
+      <div class="faq-card">
+        <h5>¿Qué significa ser Staff?</h5>
+        <p>Ser parte del Staff implica asumir roles clave, liderar iniciativas y tomar decisiones para impulsar el crecimiento del proyecto.</p>
+      </div>
+      <div class="faq-card">
+        <h5>¿Para qué ser Staff?</h5>
+        <p>Permite contribuir activamente al desarrollo del proyecto, aportando ideas, apoyando al equipo y alcanzando objetivos comunes.</p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Redes Sociales con enlaces e íconos de Bootstrap -->
+    <h2 id="redesso" class="section-title">Síguenos en Redes Sociales</h2>
+    <div  class="row">
+      <div class="col-md-6 social-card">
+        <h4>LinkedIn</h4>
+        <a href="https://www.linkedin.com/company/perutrasciende/" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+      <div class="col-md-6 social-card">
+        <h4>Instagram</h4>
+        <a href="https://www.instagram.com/perutrasciende/" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+
+  
+
+  <div id="filtrobusq" class="container mt-4">
+    <h2 id="recursoslista" >Lista de Recursos</h2>
+    <input type="text" id="filtro" class="form-control mb-3" placeholder="Filtrar por título o tipo...">
+    <table id="recursotabla" class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Título</th>
+                <th>Tipo</th>
+                <th>Enlace</th>
+            </tr>
+        </thead>
+        <tbody id="tbodycurs" >
+            <tr>
+                <td>1</td>
+                <td>Podcast "Enamórate del Problema"</td>
+                <td>Audio</td>
+                <td><a href="https://bit.ly/EpisodiosPodcastsTCD21" target="_blank">Enlace</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Desmintiendo Mitos: ¿Profesión es igual que vocación?</td>
+                <td>Audiovisual</td>
+                <td><a href="https://www.youtube.com/watch?v=med8ZthDj5w" target="_blank">Enlace</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Desmintiendo Mitos: ¿Las carreras tienen género?</td>
+                <td>Audiovisual</td>
+                <td><a href="https://www.youtube.com/watch?v=INlnOd1b9Jo" target="_blank">Enlace</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Desmintiendo Mitos: ¿Las carreras te encasillan?</td>
+                <td>Audiovisual</td>
+                <td><a href="https://www.youtube.com/watch?v=SVhzbiTOMow" target="_blank">Enlace</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Desmintiendo Mitos: ¿Puedo emprender o ser autodidacta?</td>
+                <td>Audiovisual</td>
+                <td><a href="https://www.youtube.com/watch?v=TyAcjtpwkG4" target="_blank">Enlace</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Desmintiendo Mitos: ¿Estudiar lo que el entorno me dice?</td>
+                <td>Audiovisual</td>
+                <td><a href="https://www.youtube.com/watch?v=TyAcjtpwkG4" target="_blank">Enlace</a></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Historia con propósito: Jorge Reinauldo</td>
+              <td>Audiovisual</td>
+              <td><a href="https://www.youtube.com/watch?v=0DdR8mz_J-E&list=PL9Z1Zo1CQy_ldN9nDh2jYpNdHZeW2TwFC&index=25" target="_blank">Enlace</a></td>
+          </tr>
+          <tr>
+              <td>8</td>
+              <td>Historia con propósito: Saida Meneses</td>
+              <td>Audiovisual</td>
+              <td><a href="https://www.youtube.com/watch?v=ZMgRfu3QapY&list=PL9Z1Zo1CQy_ldN9nDh2jYpNdHZeW2TwFC&index=26" target="_blank">Enlace</a></td>
+          </tr>
+          <tr>
+              <td>9</td>
+              <td>Historia con propósito: Marco Vigil</td>
+              <td>Audiovisual</td>
+              <td><a href="https://www.youtube.com/watch?v=hbc6Dkg_ex8&list=PL9Z1Zo1CQy_ldN9nDh2jYpNdHZeW2TwFC&index=27" target="_blank">Enlace</a></td>
+          </tr>
+          <tr>
+              <td>10</td>
+              <td>Historia con propósito: Gianina Honorio</td>
+              <td>Audiovisual</td>
+              <td><a href="https://www.youtube.com/watch?v=ZDX3fXe50mc&list=PL9Z1Zo1CQy_ldN9nDh2jYpNdHZeW2TwFC&index=28" target="_blank">Enlace</a></td>
+          </tr>
+          <tr>
+              <td>11</td>
+              <td>Historia con propósito: Andrea Lanata</td>
+              <td>Audiovisual</td>
+              <td><a href="https://www.youtube.com/watch?v=_W9abqi0e_8&list=PL9Z1Zo1CQy_ldN9nDh2jYpNdHZeW2TwFC&index=29" target="_blank">Enlace</a></td>
+          </tr>
+          <tr>
+              <td>12</td>
+              <td>Historia con propósito: Vanessa Quipo</td>
+              <td>Audiovisual</td>
+              <td><a href="https://www.youtube.com/watch?v=zV72u6lU0-M&list=PL9Z1Zo1CQy_ldN9nDh2jYpNdHZeW2TwFC&index=30" target="_blank">Enlace</a></td>
+          </tr>
+
+
+
+
+          <tr>
+            <td>13</td>
+            <td>Historia con propósito: Moises Piscoya</td>
+            <td>Audio</td>
+            <td><a href="https://www.youtube.com/watch?v=W-75kIMa_YQ&t=60s" target="_blank">Enlace</a></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Antiferia Vocacional Virtual: Webinars para PPF y Docentes</td>
+            <td>Audiovisual</td>
+            <td><a href="https://youtu.be/Momt4ZzSE4E" target="_blank">Enlace</a></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Antiferia Vocacional Virtual: Día 1 para estudiantes</td>
+            <td>Audiovisual</td>
+            <td><a href="https://youtu.be/NYLF2Hc6WmY" target="_blank">Enlace</a></td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Antiferia Vocacional Virtual: Día 2 para estudiantes</td>
+            <td>Audiovisual</td>
+            <td><a href="https://youtu.be/NYLF2Hc6WmY" target="_blank">Enlace</a></td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Antiferia Vocacional Virtual: Día 3 para estudiantes</td>
+            <td>Audiovisual</td>
+            <td><a href="https://youtu.be/0QSuu7-t4A8" target="_blank">Enlace</a></td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Guía para el estudiante Trasciende - Edición 2021</td>
+            <td>Audiovisual</td>
+            <td><a href="https://drive.google.com/file/d/1nJYAB97mmpIMI9D6CAbcjhkh9LMMco6B/view?usp=sharing" target="_blank">Enlace</a></td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Guía para el docente Trasciende  - Edición 2021</td>
+          <td>Audiovisual</td>
+          <td><a href="https://drive.google.com/file/d/1XRWf1hAZdOWNVRV-iwCN0kMEg9LV7UwK/view?usp=sharing" target="_blank">Enlace</a></td>
+      </tr>
+      <tr>
+          <td>20</td>
+          <td>Serie Web GPS Vocacional</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/playlist?list=PL9Z1Zo1CQy_mTdTJCbkmQ17oiG_a4vkfv" target="_blank">Enlace</a></td>
+      </tr>
+      <tr>
+          <td>21</td>
+          <td>Video sobre concepto Trasciende: Antiferia</td>
+          <td>Audiovisual</td>
+          <td><a href="https://drive.google.com/file/d/1PCYwIUgLtDQMLnz4pdGKV2aLOcmQSCyv/view?usp=sharing" target="_blank">Enlace</a></td>
+      </tr>
+      <tr>
+          <td>22</td>
+          <td>Historia con propósito: Lorena Alvarez</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=WJMFdBB2LzA" target="_blank">Enlace</a></td>
+      </tr>
+      <tr>
+          <td>23</td>
+          <td>Historia con propósito: Ricardo Pun</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=gzXLqXPUgeI&t=7s" target="_blank">Enlace</a></td>
+      </tr>
+      <tr>
+          <td>24</td>
+          <td>Historia con propósito: Vanía Masías</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=_CGZtJpLyWw" target="_blank">Enlace</a></td>
+      </tr>
+
+
+
+
+
+
+
+
+
+
+        <tr>
+          <td>25</td>
+          <td>Historia con propósito: Augusto Townsend</td>
+          <td>Audio</td>
+          <td><a href="https://www.youtube.com/watch?v=_P7JKuY-UTw" target="_blank">Enlace</a></td>
+      </tr>
+      <tr>
+          <td>26</td>
+          <td>Historia con propósito: Álvaro Henzler</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=U-gItn6CGks" target="_blank">Enlace</a></td>
+      </tr>
+      <tr>
+          <td>27</td>
+          <td>Historia con propósito: Arlette Euler</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=YLTTpPsxYkM" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>28</td>
+          <td>Historia con propósito: Elizabeth Duarte</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=gEZ0cBavlvo" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>29</td>
+          <td>Historia con propósito: Flor Calderon</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=hzSgtMVXuYM" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>30</td>
+          <td>Historia con propósito: Carla Grados</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=BrUhEggofc4" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>31</td>
+          <td>Historia con propósito: Azucena Gutierrez</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=EXn4mzHG9aI" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>32</td>
+          <td>Historia con propósito: César Bustamante</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=R1g244x9Q7g" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>33</td>
+          <td>Historia con propósito: Mariel Rentería</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=rAcnfrKuoNQ" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>34</td>
+          <td>Historia con propósito: Mariela Quispe</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=Z1zhV1SqZYM&t=17s" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>35</td>
+          <td>Historia con propósito: Miguel Uccelli</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=D6RJwMmLcso" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>36</td>
+          <td>Historia con propósito: Julio Garay</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=Azm39yECl5k" target="_blank">Enlace</a></td>
+      </tr>
+
+
+
+
+
+
+      <tr>
+          <td>37</td>
+          <td>Historia con propósito: Juan Carlos Snack</td>
+          <td>Audio</td>
+          <td><a href="https://www.youtube.com/watch?v=bZfRDhYRuKc" target="_blank">Enlace</a></td>
+      </tr>
+      <tr>
+          <td>38</td>
+          <td>Historia con propósito: Jorge Yamamoto</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=ARROHpS2qk0" target="_blank">Enlace</a></td>
+      </tr>
+      <tr>
+          <td>39</td>
+          <td>Historia con propósito: Hugo Ñopo</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=j93-XeX9Feg" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>40</td>
+          <td>Historia con propósito: Gerson Ames</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=uho9xjTFnjQ" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>41</td>
+          <td>Historia con propósito: Claudia Rheinek</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=YnBYI2EBTLo" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>42</td>
+          <td>Historia con propósito: Mariana Costa</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=l3t78hVud_o" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>43</td>
+          <td>Historia con propósito: Paola Mautino</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=CvBvYBIJ86Q" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>44</td>
+          <td>Historia con propósito: Pamela Navarro</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=4IqtVq1hCqA" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>45</td>
+          <td>Webinar para Docentes #1 - ¿Por qué voy acompañar?</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=44j5fcMetkQ&t=640s" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>46</td>
+          <td>Webinar para Docentes #2 - ¿A quién acompañamos? Rayos X de los jóvenes de hoy</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=faPBm0y5M1I" target="_blank">Enlace</a></td>
+      </tr>
+      <tr class="oculto">
+          <td>47</td>
+          <td>Webinar para Docentes #3 - ¿Cómo voy a acompañar? Las preguntas que los jóvenes necesitan</td>
+          <td>Audiovisual</td>
+          <td><a href="https://www.youtube.com/watch?v=JlNT1mHi1MQ" target="_blank">Enlace</a></td>
+      </tr>
+    <tr class="oculto">
+        <td>48</td>
+        <td>Webinar para padres de familia #1 - ¡Y se acabo el colegio!Los padres como soporte en este desafío</td>
+        <td>Audiovisual</td>
+        <td><a href="https://www.youtube.com/watch?v=btMcLwKvDgA" target="_blank">Enlace</a></td>
+    </tr>
+    <tr class="oculto">
+      <td>49</td>
+      <td>Webinar para padres de familia #2 - ¿Puede ser mi hij@ feliz y también exitoso</td>
+      <td>Audiovisual</td>
+      <td><a href="https://www.youtube.com/watch?v=c3HJuj2mtPM" target="_blank">Enlace</a></td>
+    </tr>
+    <tr class="oculto">
+        <td>50</td>
+        <td>Webinars para padres de familia #3 - ¿Cómo acompañar a mi hij@ en su búsqueda vocacional?</td>
+        <td>Audiovisual</td>
+        <td><a href="https://www.youtube.com/watch?v=KWLZR6SjstY" target="_blank">Enlace</a></td>
+    </tr>
+
+
+
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/perutrasciende"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/perutrasciende/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/perutrasciende"><i class="fab fa-youtube"></i></a>
+            <a href="https://pe.linkedin.com/company/perutrasciende"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="rights">
+            <p> <strong> © 2022 Trasciende - Derechos Reservados</strong> </p>
+            <a><strong>Política de Privacidad</strong></a>
+        </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="../js/dashboard.js"></script>
+  <script  type="module" src="../js/rol-staff.js"></script>
+</body>
 </html>

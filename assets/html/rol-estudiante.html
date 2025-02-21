@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trasciende</title>
+  <title>Dashboard Estudiante</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/rol-estudiante.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="icon" type="image/png" href="assets/img/logocorto.png">
+  <link rel="icon" type="image/png" href="../img/logocorto.png">
 
 </head>
 <body>
@@ -36,27 +36,31 @@
                         MENÚ
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#importancia">IMPORTANCIA</a></li>
-                        <li><a class="dropdown-item" href="#proyectos">PROYECTOS</a></li>
-                        <li><a class="dropdown-item" href="#podcast">PODCAST</a></li>
+                        <li><a class="dropdown-item" href="#nuestros-programas">PROYECTOS</a></li>
+                        <li><a class="dropdown-item" href="#guia-estudiantes">GUIA</a></li>
+                        <li><a class="dropdown-item" href="#acordeon">PREGUNTAS FRECUENTES</a></li>
                     </ul>
                 </li>
                 
-                <li class="nav-item"><a class="nav-link" href="#webinars">WEBINARS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#testimonios">TESTIMONIOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#serie-web-gps">SERIE WEB</a></li>
+                <li class="nav-item"><a class="nav-link" href="#escucha-podcast">PODCAST</a></li>
                 
                 <!-- Botón de Logout con ID -->
                 <li class="nav-item ms-3">
-                    <a href="#" class="btn btn-dark ms-2" id="logoutBtn">SIGN OUT</a>
+                    <a href="#" class="btn btn-dark ms-2" id="logoutBtn">LOG OUT</a>
                 </li>
+  
 
-                <!-- Barra de búsqueda con lupa -->
-                <li class="nav-item ms-3">
-                    <div class="search-container">
-                        <button class="search-btn" id="search-btn">🔍</button>
-                        <input type="search" id="search-box" placeholder="Buscar..." aria-label="Buscar">
-                    </div>
-                </li>
+            <!-- Barra de búsqueda con lupa -->
+            <li class="nav-item ms-3">
+                <div class="search-container">
+                    <button class="search-btn" id="search-btn">🔍</button>
+                    <input type="search" id="search-box" placeholder="Buscar..." aria-label="Buscar">
+                </div>
+            </li>
+            
+
+
             </ul>
         </div>
     </div>
@@ -71,70 +75,199 @@
   </header>
   
 
-  <main class="container mt-4">
-      <section class="text-center my-5">
-          <h2>¿Por qué es importante elegir una vocación?</h2>
-          <p>Elegir una vocación define el camino que tomarás en tu vida profesional y personal. Una buena elección puede llevarte al éxito y la felicidad.</p>
-          <h3>Preguntas Frecuentes</h3>
-          <div class="accordion" id="faqAccordion">
-              <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                          ¿Qué es una vocación?
-                      </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                      <div class="accordion-body">Es una inclinación natural hacia una determinada profesión o actividad.</div>
-                  </div>
-              </div>
-              <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                          ¿Es una vocación para siempre?
-                      </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                      <div class="accordion-body">No necesariamente, puede evolucionar a lo largo de la vida.</div>
-                  </div>
-              </div>
-          </div>
-      </section>
 
-      <section class="text-center my-5">
-          <h2>Proyectos Anteriores</h2>
-          <div class="d-flex flex-wrap justify-content-center gap-3">
-              <a href="https://youtu.be/NYLF2Hc6WmY" target="_blank">
-                  <img src="https://img.youtube.com/vi/NYLF2Hc6WmY/0.jpg" alt="Día 1" class="preview-img">
-                  📺 Antiferia Vocacional Virtual: Día 1
-              </a>
-              <a href="https://youtu.be/CU8dARRERaU" target="_blank">
-                  <img src="https://img.youtube.com/vi/CU8dARRERaU/0.jpg" alt="Día 2" class="preview-img">
-                  📺 Antiferia Vocacional Virtual: Día 2
-              </a>
-              <a href="https://youtu.be/0QSuu7-t4A8" target="_blank">
-                  <img src="https://img.youtube.com/vi/0QSuu7-t4A8/0.jpg" alt="Día 3" class="preview-img">
-                  📺 Antiferia Vocacional Virtual: Día 3
-              </a>
-          </div>
-      </section>
 
-      <section class="row my-5 justify-content-center">
-          <div class="col-lg-6 text-center">
-              <h2>Guía para Estudiantes</h2>
-              <iframe class="w-100" height="500" src="https://drive.google.com/file/d/1nJYAB97mmpIMI9D6CAbcjhkh9LMMco6B/preview" allow="autoplay"></iframe>
-          </div>
-          <div class="col-lg-6 text-center">
-              <h2>Serie Web GPS Vocacional</h2>
-              <a href="https://www.youtube.com/playlist?list=PL9Z1Zo1CQy_mTdTJCbkmQ17oiG_a4vkfv" class="btn btn-purple btn-lg" target="_blank">📺 Ver Lista de Reproducción</a>
-          </div>
-      </section>
 
-      <section class="text-center my-5">
-          <h2>Escucha nuestro Podcast</h2>
-          <p>Son 8 episodios con ejes temáticos sobre problemas globales y vocación.</p>
-          <a href="https://bit.ly/EpisodiosPodcastsTCD21" class="btn btn-primary btn-lg" target="_blank">🎧 Escuchar Episodios del Podcast</a>
-      </section>
-  </main>
+  
+  
+    <main class="container mt-4">
+        <!-- Carrusel -->
+        <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/antiferiatres.png" class="d-block w-100" alt="Webinar 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/antiferiados.jpg" class="d-block w-100" alt="Webinar 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/antiferia.jpg" class="d-block w-100" alt="Webinar 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+                
+
+
+
+
+
+        <!-- Proyectos Anteriores -->
+        <section id="nuestros-programas" class="text-center my-5">
+            <h2 id="proyectos">Proyectos Anteriores</h2>
+            <p class="lead">Descubre nuestros webinars diseñados para apoyar a los padres en la orientación vocacional de sus hijos.</p>
+            <div class="row justify-content-center">
+            <!-- Video 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                <div class="card-body">
+                    <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/med8ZthDj5w" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-title mt-3">Desmintiendo Mitos: ¿Profesión es igual que vocación?</h5>
+                </div>
+                </div>
+            </div>
+        
+            <!-- Video 2? -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                <div class="card-body">
+                    <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/INlnOd1b9Jo" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-title mt-3">Desmintiendo Mitos: ¿Las carreras tienen género?</h5>
+                </div>
+                </div>
+            </div>
+        
+            <!-- Video 3? -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                <div class="card-body">
+                    <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/SVhzbiTOMow" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-title mt-3">Desmintiendo Mitos: ¿Las carreras te encasillan?</h5>
+                </div>
+                </div>
+            </div>
+        
+            <!-- Video 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                <div class="card-body">
+                    <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/TyAcjtpwkG4" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-title mt-3">Desmintiendo Mitos: ¿Puedo emprender o ser autodidacta?</h5>
+                </div>
+                </div>
+            </div>
+        
+            <!-- Video 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                <div class="card-body">
+                    <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/TyAcjtpwkG4" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-title mt-3">Desmintiendo Mitos: ¿Estudiar lo que el entorno me dice?</h5>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+  
+  
+
+        <!-- Guía para Estudiantes -->
+        <section class="row my-5 justify-content-center" id="guia-estudiantes">
+            <div class="col-lg-6 text-center">
+                <h2>Guía para Estudiantes</h2>
+                <iframe class="w-100" height="500" src="https://drive.google.com/file/d/1nJYAB97mmpIMI9D6CAbcjhkh9LMMco6B/preview" allow="autoplay"></iframe>
+            </div>
+        </section>
+
+
+        <section id="acordeon" class="text-center my-5 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold mb-5">Preguntas Frecuentes</h3>
+            <div class="accordion" id="faqAccordion">
+                <!-- Primer ítem -->
+                <div class="accordion-item bg-white text-black rounded-lg shadow-sm mb-3">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button text-lg font-semibold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            ¿Por qué es importante elegir una vocación?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Elegir una vocación es una de las decisiones más importantes en tu vida, ya que define tu camino profesional y personal. Una elección adecuada puede abrirte puertas hacia el éxito y la satisfacción, ayudándote a descubrir tu propósito y desarrollar tu máximo potencial.
+                        </div>
+                    </div>
+                </div>
+                <!-- Segundo ítem -->
+                <div class="accordion-item bg-white text-black rounded-lg shadow-sm mb-3">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed text-lg font-semibold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué es una vocación?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Una vocación es una inclinación natural hacia una profesión o actividad que te apasiona y te motiva. Es un llamado interno que te impulsa a seguir una carrera que te da un sentido profundo de propósito. Descubrir tu vocación puede mejorar tu autoestima, impulsar tu crecimiento profesional y personal, y brindarte satisfacción diaria.
+                        </div>
+                    </div>
+                </div>
+                <!-- Tercer ítem -->
+                <div class="accordion-item bg-white text-black rounded-lg shadow-sm mb-3">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed text-lg font-semibold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Es una vocación para siempre?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            No necesariamente. A medida que avanzas en la vida y adquieres nuevas experiencias, tus intereses y pasiones pueden evolucionar. Tu vocación puede transformarse en función de los cambios personales y profesionales. Estar dispuesto a adaptarte y explorar nuevas áreas te permitirá seguir creciendo y encontrando mayor satisfacción a lo largo de las distintas etapas de tu vida.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+
+
+    
+
+
+
+        <!-- Serie Web GPS Vocacional -->
+        <section id="serie-web-gps" class="text-center my-5">
+            <div class="col-lg-6 mx-auto text-center">
+                <h2 id="serie-web-gps-title">Serie Web GPS Vocacional</h2>
+                <div class="ratio ratio-16x9" id="iframe-gps">
+                    <iframe src="https://www.youtube.com/embed?listType=playlist&list=PL9Z1Zo1CQy_mTdTJCbkmQ17oiG_a4vkfv" allowfullscreen></iframe>
+                </div>
+                <a href="https://www.youtube.com/playlist?list=PL9Z1Zo1CQy_mTdTJCbkmQ17oiG_a4vkfv" id="btn-serie-web" class="btn btn-purple btn-lg mt-3" target="_blank">📺 Ver Lista de Reproducción</a>
+            </div>
+        </section>
+
+        <!-- Escucha nuestro Podcast -->
+        <section id="escucha-podcast" class="text-center my-5">
+            <h2 id="escucha-podcast-title">Escucha nuestro Podcast</h2>
+            <p id="escucha-podcast-description">Son 8 episodios con ejes temáticos sobre problemas globales y vocación.</p>
+            <div class="ratio ratio-16x9" id="iframe-podcast">
+                <iframe src="https://www.youtube.com/embed?listType=playlist&list=PL9Z1Zo1CQy_nQYszMny7N7brmjLsw-98S" allowfullscreen></iframe>
+            </div>
+            <a href="https://bit.ly/EpisodiosPodcastsTCD21" id="btn-podcast" class="btn btn-primary btn-lg mt-3" target="_blank">🎧 Escuchar Episodios del Podcast</a>
+        </section>
+
+    </main>
 
 
 

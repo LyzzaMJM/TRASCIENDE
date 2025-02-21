@@ -1,17 +1,136 @@
-<!-- Por ejemplo, en rol-estudiante.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard Profesor</title>
-    <!-- Tus hojas de estilo -->
-  </head>
-  <body>
-    <!-- Contenido del dashboard -->
-    <button id="logoutBtn">Cerrar sesión</button>
-    <h1>PROFESOR</h1>
-    <!-- Incluye dashboard.js -->
-    <script type="module" src="../js/dashboard.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Profesores</title>
+  
+  <!-- Estilos y fuentes -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/rol-profesor.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="../img/logocorto.png">
+
+  <!-- Scripts Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">
+        <img src="../img/logocorto.png" alt="Logo" width="60">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#proyectos">PROYECTOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#antiferia">ANTIFERIA</a></li>
+                    <!-- Botón de Logout con ID -->
+                    <li class="nav-item ms-3">
+                      <a href="#" class="btn btn-dark ms-2" id="logoutBtn">LOG OUT</a>
+                  </li>
+            <!-- Barra de búsqueda con lupa -->
+            <li class="nav-item ms-3">
+              <div class="search-container">
+                  <button class="search-btn" id="search-btn">🔍</button>
+                  <input type="search" id="search-box" placeholder="Buscar..." aria-label="Buscar">
+              </div>
+          </li>
+          
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container mt-4">
+    <h1 class="text-center">Profesores</h1>
+
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/aboutuno.jpg" class="d-block w-100" alt="Webinar 1">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/aboutdos.jpg" class="d-block w-100" alt="Webinar 2">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+
+  <main class="container mt-4">
+    <div class="contenedor-secciones">
+      <section id="proyectos" class="seccion">
+        <h2>Proyectos Anteriores</h2>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="https://youtu.be/44j5fcMetkQ" target="_blank">
+            <img src="https://img.youtube.com/vi/44j5fcMetkQ/0.jpg" alt="Webinar 1" class="preview-img">
+            ¿Por qué voy acompañar?
+          </a>
+          <a href="https://youtu.be/faPBm0y5M1I" target="_blank">
+            <img src="https://img.youtube.com/vi/faPBm0y5M1I/0.jpg" alt="Webinar 2" class="preview-img">
+            ¿A quién acompañamos? Rayos X de los jóvenes de hoy
+          </a>
+          <a href="https://youtu.be/JlNT1mHi1MQ" target="_blank">
+            <img src="https://img.youtube.com/vi/JlNT1mHi1MQ/0.jpg" alt="Webinar 3" class="preview-img">
+            ¿Cómo voy a acompañar? Las preguntas que los jóvenes necesitan
+          </a>
+        </div>
+      </section>
+
+      <section id="antiferia" class="seccion">
+        <h2>Antiferia Vocacional Virtual</h2>
+        <p>Webinars para PPF y Docentes</p>
+        <iframe class="video-embed" src="https://www.youtube.com/embed/Momt4ZzSE4E" title="Antiferia Vocacional Virtual" frameborder="0" allowfullscreen></iframe>
+
+        <div class="d-flex align-items-center justify-content-center mt-3">
+          <img id="podcast" src="../img/LogoTrasciende2.png" alt="Perú Trasciende" class="youtube-channel-img me-2">
+          <a href="https://www.youtube.com/@PeruTrasciende/featured" class="btn btn-danger" target="_blank">Suscribirme a YouTube</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/perutrasciende"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/perutrasciende/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/perutrasciende"><i class="fab fa-youtube"></i></a>
+        <a href="https://pe.linkedin.com/company/perutrasciende"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="rights">
+        <p><strong>© 2022 Trasciende - Derechos Reservados</strong></p>
+        <a><strong>Política de Privacidad</strong></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="../js/dashboard.js"></script>
+  <script src="../js/rol-profesor.js"></script>
+</body>
 </html>

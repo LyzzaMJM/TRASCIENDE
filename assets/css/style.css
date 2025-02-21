@@ -6,7 +6,7 @@ body {
 
     margin: 0;
     padding: 0;
-    background-image: url('../img/fondodos.png');
+    background-image: url('../img/fondopadres.png');
     cursor: none;
 }
 
@@ -222,7 +222,7 @@ body {
 }
 
 .hero-btn:hover {
-    background-color: #DAFF3D; 
+    background-color: #ABE6F5; 
     color: #000000;
 }
 
@@ -312,7 +312,15 @@ body {
 }
 
 
+.tittle3 {
+    color: #000000;
+    font-size: 56px;
+    font-weight: 900; 
+    font-family: 'Roboto Condensed', sans-serif;
 
+    text-shadow: 4px 2px 0px #ABE6F5; 
+    text-align: center; 
+}
 
 
 html {
@@ -456,7 +464,7 @@ html {
 
 /*  FRONT  */
 .programa-card.neon .front {
-    background-color: #DAFF3D;
+    background-color: #ABE6F5;
     color: #4900A2;
     box-shadow: 5px 5px 0px #4900A2;
 }
@@ -473,9 +481,9 @@ html {
 }
 
 .programa-card.neon .back {
-    background-color: #4900A2;
-    color: #DAFF3D;
-    box-shadow: 5px 5px 0px #DAFF3D;
+    background-color: #ABE6F5;
+    color: #4A00A5;
+    box-shadow: 5px 5px 0px #4A00A5;
 }
 
 .programa-card.black .back {
@@ -554,11 +562,11 @@ html {
 
 .ferias-info:nth-child(1) {
     background-color: #4A00A5; 
-    color: #fff;
+    color: #ABE6F5;
 }
 
 .ferias-info:nth-child(3) {
-    background-color: #DAFF3D; 
+    background-color: #ABE6F5; 
     color: #4A00A5;
 }
 
@@ -634,7 +642,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #DAFF3D;
+    background-color: #ABE6F5;
     position: relative;
     z-index: 1;
     overflow: visible; 
@@ -642,13 +650,13 @@ html {
 
 
 .team-img {
-    width: 100%; 
+    width: 120%; 
     height: auto;
     max-width: none; 
     position: absolute;
     top: 45%; 
     left: 55%;
-    transform: translate(-50%, -50%);
+    transform: translate(-53%, -50%);
     z-index: 2;
 }
 
@@ -778,7 +786,7 @@ p{
     margin-bottom: 25px;
     color: #000000;
     padding: 15px;
-    border-left: 5px solid #DAFF3D;
+    border-left: 5px solid #ABE6F5;
     background-color: #fff; 
     border-radius: 8px;
 
@@ -810,12 +818,12 @@ p{
 
 .titulo-mision {
     color: #6B00D7;
-    border-bottom-color: #DAFF3D;
+    border-bottom-color: #ABE6F5;
 }
 
 .titulo-vision {
     color: #6B00D7;
-    border-bottom-color: #DAFF3D;
+    border-bottom-color: #ABE6F5;
 }
 
 .texto-mision, .texto-vision {
@@ -841,10 +849,10 @@ p{
 
 .contacto {
     max-width: 600px;
-    background: #DAFF3D;
+    background: #ABE6F5;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 5px 5px 0px #000;
+    box-shadow: 5px 5px 0px #4A00A5;
     margin: auto;
     text-align: left;
     position: relative;
@@ -861,7 +869,7 @@ p{
     border-radius: 8px;
     border: none;
     padding: 8px;
-    background-color: #AFD031;
+    background-color: #c2e7f0;
     transition: 0.3s;
 }
 
@@ -919,9 +927,9 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #4900A2;
+    background: #ABE6F5;
     border-radius: 10px;
-    box-shadow: 5px 5px 0px #DAFF3D;
+    box-shadow: 5px 5px 0px #4A00A5;
     padding: 20px;
     text-align: center;
     z-index: 1000;
@@ -931,21 +939,21 @@ p{
 .modal-exito p {
     font-size: 16px;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
 }
 
 .modal-exito button {
     margin-top: 10px;
     padding: 5px 15px;
     border: none;
-    background: #DAFF3D;
-    color: rgb(0, 0, 0);
+    background: #4A00A5;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     cursor: pointer;
 }
 
 .modal-exito button:hover {
-    background: #AFD031;
+    background: #3A0085;
 }
 
 /* Fondo de modal */
@@ -1071,7 +1079,7 @@ footer {
 }
 
 .sentido-col {
-    background-color: #DAFF3D;
+    background-color: #ABE6F5;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -1126,11 +1134,11 @@ footer {
 }
 
 .es-col {
-    border-left: 5px solid #AFD031;
+    border-left: 5px solid green;
 }
 
 .no-es-col {
-    border-left: 5px solid #FF4B2B;
+    border-left: 5px solid red;
 }
 
 @media (max-width: 767px) {
@@ -1158,13 +1166,13 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #DAFF3D, #4A00A5);
+  background: linear-gradient(45deg, #DAFF3D, #4A00A5, #ABE6F5);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #DAFF3D, #4A00A5);
+  background: linear-gradient(45deg, #DAFF3D, #4A00A5, #ABE6F5);
   box-shadow: 0px 0px 10px rgba(218, 255, 61, 0.75), 
               0px 0px 10px rgba(74, 0, 165, 0.75);
 }
